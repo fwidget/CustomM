@@ -44,6 +44,8 @@
 		3AAE5425197ACFF2001752C3 /* TemplateAddTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AAE5424197ACFF2001752C3 /* TemplateAddTableViewController.m */; };
 		3AAE5429197AD055001752C3 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AAE5428197AD055001752C3 /* MenuViewController.m */; };
 		3AAE542C197AD09D001752C3 /* SettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AAE542B197AD09D001752C3 /* SettingTableViewController.m */; };
+		3ABB8F3319890DA5001E8713 /* AnimatedTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ABB8F3019890DA5001E8713 /* AnimatedTransitioning.m */; };
+		3ABB8F3419890DA5001E8713 /* TransitionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ABB8F3219890DA5001E8713 /* TransitionDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,6 +123,10 @@
 		3AAE5428197AD055001752C3 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
 		3AAE542A197AD09D001752C3 /* SettingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingTableViewController.h; path = Setting/SettingTableViewController.h; sourceTree = "<group>"; };
 		3AAE542B197AD09D001752C3 /* SettingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingTableViewController.m; path = Setting/SettingTableViewController.m; sourceTree = "<group>"; };
+		3ABB8F2F19890DA5001E8713 /* AnimatedTransitioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimatedTransitioning.h; sourceTree = "<group>"; };
+		3ABB8F3019890DA5001E8713 /* AnimatedTransitioning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimatedTransitioning.m; sourceTree = "<group>"; };
+		3ABB8F3119890DA5001E8713 /* TransitionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitionDelegate.h; sourceTree = "<group>"; };
+		3ABB8F3219890DA5001E8713 /* TransitionDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitionDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +186,7 @@
 		3A0F8B77197A143F006A932F /* CustomM */ = {
 			isa = PBXGroup;
 			children = (
+				3ABB8F2919890A11001E8713 /* Lib */,
 				3AAE5426197AD03E001752C3 /* Menu */,
 				3AAE53C1197AB495001752C3 /* Memo */,
 				3AAE53C6197AC9D3001752C3 /* Manager */,
@@ -313,6 +320,26 @@
 			name = Menu;
 			sourceTree = "<group>";
 		};
+		3ABB8F2919890A11001E8713 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				3ABB8F2E19890DA5001E8713 /* Transition Delegate */,
+			);
+			name = Lib;
+			sourceTree = "<group>";
+		};
+		3ABB8F2E19890DA5001E8713 /* Transition Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				3ABB8F2F19890DA5001E8713 /* AnimatedTransitioning.h */,
+				3ABB8F3019890DA5001E8713 /* AnimatedTransitioning.m */,
+				3ABB8F3119890DA5001E8713 /* TransitionDelegate.h */,
+				3ABB8F3219890DA5001E8713 /* TransitionDelegate.m */,
+			);
+			name = "Transition Delegate";
+			path = "lib/Transition Delegate";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -421,6 +448,7 @@
 				3A0F8B8B197A143F006A932F /* ViewController.m in Sources */,
 				3AAE53FE197ACEAF001752C3 /* ManagerAddViewController.m in Sources */,
 				3AAE542C197AD09D001752C3 /* SettingTableViewController.m in Sources */,
+				3ABB8F3319890DA5001E8713 /* AnimatedTransitioning.m in Sources */,
 				3AAE5410197ACF45001752C3 /* InputItemDetailAndEditTableViewController.m in Sources */,
 				3AAE5422197ACFDE001752C3 /* TemplateDetailAndEditTableViewController.m in Sources */,
 				3AAE53F2197ACCDD001752C3 /* ManagerViewController.m in Sources */,
@@ -436,6 +464,7 @@
 				3A0F8B7E197A143F006A932F /* main.m in Sources */,
 				3AAE541F197ACFC5001752C3 /* TemplateAddViewController.m in Sources */,
 				3AAE53F8197ACE6F001752C3 /* MemoAddTableViewController.m in Sources */,
+				3ABB8F3419890DA5001E8713 /* TransitionDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

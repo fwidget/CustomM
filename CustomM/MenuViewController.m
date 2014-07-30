@@ -48,7 +48,7 @@
 #pragma mark -
 #pragma mark Button
 - (IBAction)cancelBtn:(id)sender {
-    [self dismissViewControllerAnimated:NO completion:nil];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end

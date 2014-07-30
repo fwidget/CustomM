@@ -116,4 +116,14 @@
 }
 */
 
+- (IBAction)popupMenu:(id)sender {
+    TransitionDelegate *delegate = [[TransitionDelegate alloc]init];
+    
+    MenuViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"popMenu"];
+    vc.view.backgroundColor = [UIColor clearColor];
+    vc.modalPresentationStyle = UIModalPresentationCustom;
+    [vc setTransitioningDelegate:delegate];
+    [self presentViewController:vc animated:YES completion:nil];
+}
+
 @end
