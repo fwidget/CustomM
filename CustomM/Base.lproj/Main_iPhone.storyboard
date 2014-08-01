@@ -98,19 +98,10 @@
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="h5W-Bj-ojf" appends="YES" id="blz-XI-gh4"/>
-                        </connections>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oTi-fk-dnS" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="h5W-Bj-ojf">
-                    <connections>
-                        <action selector="cancelBtn:" destination="3a2-9B-yVz" id="uNG-Xi-ok6"/>
-                        <outlet property="delegate" destination="jaY-dN-zVg" id="XZr-qC-xyP"/>
-                    </connections>
-                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-10706" y="-10007"/>
         </scene>
