@@ -7,12 +7,17 @@
 //
 
 #import "MemoTableViewController.h"
+#import "MemoTableViewCell.h"
 
 @interface MemoTableViewController ()
+
+@property(nonatomic, strong) NSArray *dataArr;
 
 @end
 
 @implementation MemoTableViewController
+
+@synthesize dataArr = dataArr_;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -27,11 +32,15 @@
 {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+    // DB에서 데이터 취득
+    self.dataArr = [NSArray arrayWithObjects:
+                        [NSDictionary dictionaryWithObjectsAndKeys:@"title1",@"title",@"detail1",@"detail",@"2014/07/03 00:00",@"date", nil],
+                        [NSDictionary dictionaryWithObjectsAndKeys:@"title2",@"title",@"detail1",@"detail",@"2014/07/03 00:00",@"date", nil],
+                        [NSDictionary dictionaryWithObjectsAndKeys:@"title3",@"title",@"detail1",@"detail",@"2014/07/03 00:00",@"date", nil],
+                        [NSDictionary dictionaryWithObjectsAndKeys:@"title4",@"title",@"detail1",@"detail",@"2014/07/03 00:00",@"date", nil]
+                        , nil];
+    [self.tableView registerNib:[UINib nibWithNibName:@"MemoTableViewCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"memoCell"];
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (void)didReceiveMemoryWarning
@@ -44,28 +53,33 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+//    return [self.dataArr count];
+    return 3;
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    MemoTableViewCell *cell = (MemoTableViewCell*)[tableView dequeueReusableCellWithIdentifier:@"memoCell" forIndexPath:indexPath];
+
+    if (nil == cell) {
+        
+    }
     
-    // Configure the cell...
-    
+//    NSDictionary *memoItem = [self.dataArr objectAtIndex:indexPath.row];
+//    cell.memoTitle = [memoItem objectForKey:@"title"];
+//    cell.memoDetail = [memoItem objectForKey:@"detail"];
+//    cell.memoDate = [memoItem objectForKey:@"date"];
+//    
     return cell;
 }
-*/
 
 /*
 // Override to support conditional editing of the table view.
