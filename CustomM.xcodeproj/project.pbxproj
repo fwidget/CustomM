@@ -22,6 +22,7 @@
 		3A0F8B96197A143F006A932F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A0F8B75197A143F006A932F /* UIKit.framework */; };
 		3A0F8B9E197A143F006A932F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3A0F8B9C197A143F006A932F /* InfoPlist.strings */; };
 		3A0F8BA0197A143F006A932F /* CustomMTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A0F8B9F197A143F006A932F /* CustomMTests.m */; };
+		3A73F5C3199112CF00969254 /* MemoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A73F5C2199112CF00969254 /* MemoTableViewCell.m */; };
 		3AAE53DD197ACBB8001752C3 /* MemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AAE53DC197ACBB8001752C3 /* MemoViewController.m */; };
 		3AAE53E3197ACBF8001752C3 /* MemoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AAE53E2197ACBF8001752C3 /* MemoTableViewController.m */; };
 		3AAE53EC197ACC83001752C3 /* MemoAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AAE53EB197ACC83001752C3 /* MemoAddViewController.m */; };
@@ -79,6 +80,8 @@
 		3A0F8B9B197A143F006A932F /* CustomMTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CustomMTests-Info.plist"; sourceTree = "<group>"; };
 		3A0F8B9D197A143F006A932F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3A0F8B9F197A143F006A932F /* CustomMTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomMTests.m; sourceTree = "<group>"; };
+		3A73F5C1199112CF00969254 /* MemoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoTableViewCell.h; sourceTree = "<group>"; };
+		3A73F5C2199112CF00969254 /* MemoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemoTableViewCell.m; sourceTree = "<group>"; };
 		3AAE53DB197ACBB8001752C3 /* MemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MemoViewController.h; path = Memo/MemoViewController.h; sourceTree = "<group>"; };
 		3AAE53DC197ACBB8001752C3 /* MemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MemoViewController.m; path = Memo/MemoViewController.m; sourceTree = "<group>"; };
 		3AAE53E1197ACBF8001752C3 /* MemoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MemoTableViewController.h; path = Memo/MemoTableViewController.h; sourceTree = "<group>"; };
@@ -234,9 +237,20 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		3A73F5C0199112CF00969254 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				3A73F5C1199112CF00969254 /* MemoTableViewCell.h */,
+				3A73F5C2199112CF00969254 /* MemoTableViewCell.m */,
+			);
+			name = Cell;
+			path = Memo/Cell;
+			sourceTree = "<group>";
+		};
 		3AAE53C1197AB495001752C3 /* Memo */ = {
 			isa = PBXGroup;
 			children = (
+				3A73F5C0199112CF00969254 /* Cell */,
 				3AAE53DB197ACBB8001752C3 /* MemoViewController.h */,
 				3AAE53DC197ACBB8001752C3 /* MemoViewController.m */,
 				3AAE53E1197ACBF8001752C3 /* MemoTableViewController.h */,
@@ -441,6 +455,7 @@
 				3AAE5401197ACEC5001752C3 /* ManagerAddTableViewController.m in Sources */,
 				3AAE5404197ACEDB001752C3 /* InputItemTableViewController.m in Sources */,
 				3AAE53EC197ACC83001752C3 /* MemoAddViewController.m in Sources */,
+				3A73F5C3199112CF00969254 /* MemoTableViewCell.m in Sources */,
 				3AAE540A197ACF06001752C3 /* InputItemViewController.m in Sources */,
 				3AAE53DD197ACBB8001752C3 /* MemoViewController.m in Sources */,
 				3AAE5413197ACF5B001752C3 /* InputItemAddViewController.m in Sources */,
